@@ -1,0 +1,12 @@
+version: '2'
+services:
+  json-server:
+    image: json-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./code:/data
+    restart: always
