@@ -3,7 +3,7 @@ const faker = require('faker');
 let database = { posts: []};
 const threshold = 1000;
 
-for (let id = 1; i<= threshold; i++) {
+for (let id = 1; id<= threshold; id++) {
   database.posts.push({
     id: id,
     author: faker.name.firstName() + " " + faker.name.lastName(),
